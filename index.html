@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Balaji Hospitality Services - Professional Housekeeping, Security & Patient Care</title>
+    <meta name="description" content="Balaji Hospitality Services provides premium housekeeping, security guards, patient care, and pest control services in Bilaspur, Chhattisgarh since 2014.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://via.placeholder.com/64x64?text=BHS" type="image/png">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #d4af37;
+            --secondary-color: #1a1a1a;
+            --accent-color: #8b0000;
+            --light-color: #f8f8f8;
+            --text-color: #333;
+            --text-light: #777;
+        }
+        
+        /* Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--secondary-color);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('<a href="https://ibb.co/DDJhq5gV"><img src="https://i.ibb.co/Gv6yhc3x/LOGO-DESIGN.png" alt="LOGO-DESIGN" border="0"></a>') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease;
+            position: relative;
+            z-index: 2;
+        }
+        
+        header img.logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 3px solid var(--primary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        header img.logo:hover {
+            transform: scale(1.05);
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            margin: 20px 0 15px;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to right, #d4af37, #f5d68f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        header p.tagline {
+            font-style: italic;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .experience-badge {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 1rem;
+            display: inline-block;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* Button Styles */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+            margin: 0 10px 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid #25D366;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .whatsapp-button:hover {
+            background-color: transparent;
+            color: #25D366;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.03);
+        }
+        
+        .about-image::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 5px solid var(--primary-color);
+            border-radius: 10px;
+            top: -15px;
+            left: -15px;
+            z-index: -1;
+        }
+        
+        /* Stats Section */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 60px auto;
+            max-width: 1000px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+        
+        .stat-label {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-image {
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover .service-image img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        
+        .service-content p {
+            color: var(--text-light);
+        }
+        
+        .service-content ul {
+            padding-left: 20px;
+            color: var(--text-light);
+        }
+        
+        .service-content li {
+            margin-bottom: 8px;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                       url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            align-items: center;
+        }
+        
+        .client-logo {
+            background:lightgreen;
+            padding: 50px;
+            border-radius: 50px;
+            height: 30px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+            .client-logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .client-logo img {
+            max-width: 50%;
+            max-height: 60px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        
+        .client-logo:hover img {
+            filter: grayscale(0%);
+        }
+        
+        /* Service Area Coverage */
+        .coverage-container {
+            background: darkgrey;
+            padding: 15px;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 60px auto;
+            max-width: 1000px;
+        }
+        
+        .coverage-map {
+            width: 100%;
+            height: 400px;
+            background: url('https://maps.googleapis.com/maps/api/staticmap?center=Bilaspur,Chhattisgarh&zoom=12&size=800x400&maptype=roadmap&markers=color:red%7CBilaspur,Chhattisgarh&key=YOUR_API_KEY') center/cover no-repeat;
+            border-radius: 8px;
+            margin-top: 20px;
+            position: relative;
+        }
+        
+        .coverage-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        /* Photo Gallery */
+        .gallery-container {
+            margin: 60px auto;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 200px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 60px auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--light-color);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        .faq-toggle {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        /* Service Packages */
+        .packages-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px auto;
+        }
+        
+        .package-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .package-header {
+            background: var(--secondary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .package-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+        
+        .package-features {
+            padding: 20px;
+        }
+        
+        .package-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .package-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .package-features li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .package-button {
+            display: block;
+            text-align: center;
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 12px;
+            margin: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        
+        .package-button:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+        
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+        }
+        
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        /* Feedback System */
+        .feedback-section {
+            background-color: #f9f9f9;
+            padding: 80px 20px;
+        }
+        
+        .feedback-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .feedback-tab {
+            padding: 12px 30px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .feedback-tab.active {
+            color: var(--secondary-color);
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .feedback-tab:hover:not(.active) {
+            color: var(--secondary-color);
+        }
+        
+        .feedback-content {
+            display: none;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .feedback-content.active {
+            display: block;
+        }
+        
+        .feedback-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+        }
+        
+        .feedback-form h3 {
+            margin-top: 0;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .rating-container {
+            margin: 20px 0;
+        }
+        
+        .feedback-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feedback-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .feedback-card:before {
+            content: """;
+            font-size: 80px;
+            color: var(--primary-color);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: serif;
+        }
+        
+        .feedback-card:after {
+            content: """;
+            font-size: 80px;
+            color: var(--primary-color);
+            opacity: 0.2;
+            position: absolute;
+            bottom: -40px;
+            right: 20px;
+            font-family: serif;
+        }
+        
+        .feedback-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .feedback-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .feedback-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .feedback-date {
+            color: var(--text-light);
+            font-size: 0.8rem;
+        }
+        
+        .feedback-rating {
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+        
+        .feedback-text {
+            line-height: 1.6;
+        }
+        
+        .employee-feedback {
+            background-color: rgba(212, 175, 55, 0.1);
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .feedback-filter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 8px 20px;
+            margin: 0 5px 10px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 60px;
+            position: relative;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+        
+        .footer-logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .footer-links ul {
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: white;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .social-links {
+            margin: 30px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Chatbot Widget */
+        .chatbot-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+        
+        .chatbot-button {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            border: none;
+        }
+        
+        .chatbot-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .chatbot-window {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 350px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            display: none;
+        }
+        
+        .chatbot-header {
+            background: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chatbot-messages {
+            height: 300px;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f5f5f5;
+        }
+        
+        .chatbot-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .chatbot-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        
+        .chatbot-input button {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        /* Job Application Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1001;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+        }
+        
+        /* Emergency Contact Banner */
+        .emergency-banner {
+            background: var(--accent-color);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 998;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .emergency-banner .phone {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .emergency-banner .phone i {
+            margin-right: 10px;
+        }
+        
+        /* Real-time Notification */
+        .notification-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .notification-panel {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 15px;
+            z-index: 999;
+            display: none;
+        }
+        
+        .notification-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+        
+        .notification-item:last-child {
+            border-bottom: none;
+        }
+        
+        .notification-time {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            header h1 {
+                font-size: 3rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .package-card {
+                min-width: 280px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            header p.tagline {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .button-group {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .cta-button, .whatsapp-button {
+                margin: 10px 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .chatbot-window {
+                width: 90%;
+                right: 5%;
+            }
+            
+            .emergency-banner {
+                flex-direction: column;
+                padding: 10px;
+            }
+            
+            .emergency-banner .phone {
+                margin: 5px 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .feedback-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .feedback-tab {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src=C:\"<a href="https://ibb.co/DDJhq5gV"><img src="https://i.ibb.co/Gv6yhc3x/LOGO-DESIGN.png" alt="LOGO-DESIGN" border="0"></a>">
+            <h1 class="animate__animated animate__BLUEGOLD">BALAJI HOSPITALITY SERVICES</h1>
+            <p class="tagline animate__animated animate__fadeInUp">ONE NAME, MANY SERVICES, ONE PROMISE</p>
+            <div class="experience-badge animate__animated animate__fadeIn animate__delay-1s">Experience of 12 Years in Hospitality</div>
+            <div class="button-group animate__animated animate__fadeIn animate__delay-1s">
+                <a href="#contact" class="cta-button">Contact Us Today</a>
+                <a href="https://wa.me/916268481363" class="whatsapp-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+                <a href="#job-application" class="cta-button" id="apply-now-btn">Apply for Jobs</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Founded in 2014, Balaji Hospitality Services has been a trusted name in professional Housekeeping, Security Guards, Patient Care & Pest-Control services. From Hospitals, Hotels to Commercial & Industrial sites, our trained staff ensures unmatched Hygiene, Discipline, and Dedication to clients across Chhattisgarh.</p>
+                <p>Our team of dedicated professionals brings together years of experience in housekeeping, security services, patient care, and pest control. We pride ourselves on delivering personalized services that exceed our clients' expectations.</p>
+                <p>From hospitals to corporate offices, our comprehensive solutions are tailored to meet the unique needs of each establishment we work with.</p>
+            </div>
+            <div class="about-image">
+                <img src="data:image/jpeg;base64,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" alt="Our Team">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section id="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">12+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Trained Staff</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Satisfied Clients</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Housekeeping Services">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Housekeeping Services</h3>
+                    
+                        <ul>
+                        <font color="green">
+                        <li>Trained and Uniformed cleaning staff</li>
+                        <li>Infection control SOPs followed</li>
+                        <li>Daily Cleaning, Dusting, Bio Medical Waste Management</li>
+                        <li>Polite and Efficient Staff</li>
+                    
+                     </ul>
+                    <p>Professional housekeeping services for hospitals, Hotels, Offices, Commercial, Residential complexes with trained staff and quality cleaning products.</p>
+</font>
+            </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="data:image/jpeg;base64,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">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Guards Services</h3>
+                    <ul>
+                     <font color="mehroon">
+                     <li> Uniformed & Trained and verified security personnel<li>
+                        <li> For all types of establishments, providing 24*7 protection and surveillance (DAY & NIGHT)</li>
+                        <li> CCTV monitoring & visitor management</li>
+                        <li> Industrial, Hospital & Society Security</li>
+                       </font>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Patient Care">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <h3>Patient Care Services</h3>
+                      <p>Balaji Hospitality Services provides skilled and compassionate patient care attendants for Hospitals, Clinics and Home-Care settings. Our staff is trained to handle patients with care, dignity and professionalism.</p>
+                    <ul>
+                    <font color="voilet">
+                        <ul>
+                        <ul style="list-style-position: inside; border: 1px dashed blue; padding: 20px;">
+                        <li>✔️ Bedside Assistance - Helping with movement Bed shifting Changing positions</li>
+
+                        <li>✔️ Hygiene Support - Bathing, Dressing, Oral care, Bedpan assistance</li>
+                        <li>✔️ Feeding Support - Helping patients with Food & Water as per medical instructions</li>
+                        <li>✔️ Medication Reminder - Ensuring timely medicine intake (non-medical supervision)</li>
+                        <li>✔️ Mobility Assistance - Wheelchair, Walker and Walking support</li>
+                        <li>✔️ Ward Area Cleanliness - Patient surrounding area cleaning & sanitization</li>
+                        <li>✔️ Companionship & Emotional Support - Friendly, Polite and empathetic caretakers</li>
+                        <li>✔️ Daily Monitoring - Patient behaviour, routine update to nurse/doctor (if needed)</li>
+</font>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1594122230689-45899d9e6f69?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pest Control">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Pest Control Services</h3>
+                    <p>Effective pest control solutions using safe and approved methods to keep your premises pest-free all year round.</p>
+                    <ul>
+                    <font color="green+red">
+                        <li>Termite Control: Long-lasting protection for wooden furniture and structures</li>
+                        <li>Cockroach Control: Safe treatment for kitchens, bathrooms & drainage areas</li>
+                        <li>Rodent Control: Effective traps and baiting systems for homes and commercial places</li>
+                        <li>Mosquito & Fly Control: Fogging and spraying services for indoor & outdoor areas</li>
+                        <li>Bed Bug Control: Deep treatment for mattresses, furniture, and rooms</li>
+                        <li>General Disinfestation: A complete pest protection package to remove ants, spiders, silverfish, etc.</li>
+</font>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Area Coverage -->
+    <section id="coverage">
+        <h2 class="section-title">Our Service Areas</h2>
+        <div class="coverage-container">
+        <font color="gold">
+          <p>We proudly serve clients throughout Chhattisgarh with a focus on Bilaspur and surrounding regions. Our services are available for both residential and commercial properties in the following areas:</p>
+</font>
+                <div class="coverage-map">
+                <div class="coverage-overlay">
+                      <h3>Coverage Areas</h3>
+                        <ul style="columns: 2; list-style: none; padding: 0;">
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> Bilaspur City</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> Deorikhurd</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> Kota</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> Masturi</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> Takhatpur</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> Ratanpur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Photo Gallery -->
+    <section id="gallery">
+        <h2 class="section-title">Our Work Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Housekeeping Service">
+                    <div class="gallery-caption">Professional Housekeeping</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581093196277-1c8c169068f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Security Services">
+                    <div class="gallery-caption">Trained Security Personnel</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Patient Care">
+                    <div class="gallery-caption">Compassionate Patient Care</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1594122230689-45899d9e6f69?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pest Control">
+                    <div class="gallery-caption">Effective Pest Control</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Our Team">
+                    <div class="gallery-caption">Our Professional Team</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Hospitality Services">
+                    <div class="gallery-caption">Quality Hospitality Services</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Packages -->
+    <section id="packages">
+        <h2 class="section-title">Service Packages</h2>
+        <div class="packages-container">
+            <div class="package-card">
+                <div class="package-header">
+                    <h3>Basic Package</h3>
+                    <p>BALAJI HOSPITALITY SERVICES CHARGES</p>
+                </div>
+                <div class="package-price"> Services Charges List:</div>
+                <div class="package-features">
+                    <ul>
+                      <li>→   Female Staff Charges 10,500/- (per staff)</li>
+                        <li>→ Male Staff Charges 11,500/- (per staff)</li>
+                        <li>→ Security Personnel Charges 13,500/- (per staff)</li>
+                        <li>→ Patient-Care Attendant Charges 11,000/- (per staff)</li>
+                        <li>Note :- Housekeeping Duty time 8hrs & Security Guards Duty time 12hrs </li>
+                    </ul>
+                </div>
+                <a href="#contact" class="package-button">Get Started</a>
+            </div>
+            
+            <div class="package-card">
+                <div class="package-header" style="background: var(--primary-color);">
+                    <h3>Balaji Hospitality Services</h3>
+                    <p>Comprehensive services for medium businesses</p>
+                </div>
+                <div class="package-price">Service Pakages List :</div>
+                <div class="package-features">
+                    <ul>
+                        <li>→  3 Housekeeping Staff in Just ₹ 31,200/- </li>
+                        <li>→  6 HK Staff in Just ₹ 61,800/- </li>
+                        <li>→  6 HK Staff + 2 Security Guards in Just ₹ 88,200/- </li>
+                        <li>→ 8 Housekeeping Staff in Just ₹ 81,200 </li>
+                        <li>→ 8 Hk Staff + 3 Security Guards in Just ₹ 1,19,000/- (with dedicated supervisor) </li>
+                        <li>→ 12 HK Staff + 4 Security Guards in Just ₹ 1,70,800/- (with dedicated supervisor) </li>
+                    </ul>
+                </div>
+                <a href="#contact" class="package-button">Get Started</a>
+            </div>
+            
+            <div class="package-card">
+                <div class="package-header">
+                    <h3>Enterprise Package</h3>
+                    <p>Custom solutions for large facilities</p>
+                </div>
+                <div class="package-price">Custom Quote</div>
+                <div class="package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Full Facility Management</li>
+                        <li><i class="fas fa-check"></i> Dedicated Security Team</li>
+                        <li><i class="fas fa-check"></i> Weekly Pest Control</li>
+                        <li><i class="fas fa-check"></i> Specialized Patient Care</li>
+                        <li><i class="fas fa-check"></i> On-site Supervisor</li>
+                        <li><i class="fas fa-check"></i> 24/7 Emergency Support</li>
+                        <li><i class="fas fa-check"></i> Customized Solutions</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="package-button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    What areas do you serve?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    We primarily serve Bilaspur and surrounding areas in Chhattisgarh, including Deorikhurd, Kota, Masturi, Takhatpur, and Ratanpur. For specific locations, please contact us.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    How quickly can you start services at our facility?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    We can typically mobilize our team within 24-48 hours after contract signing, depending on the scale of services required.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are your staff members trained and verified?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, all our staff undergo rigorous training and background verification before deployment. We also provide ongoing training to ensure quality service.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What makes your services different from competitors?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Our 12+ years of experience, rigorous staff training programs, customized service plans, and commitment to client satisfaction set us apart. We also offer integrated solutions across multiple hospitality services.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you provide emergency services?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, we offer 24/7 emergency services for all our offerings. Our emergency response team can be reached at +91 62684 81363 at any time.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h3 class="section-title" style="color: gold;">Clients We Serve</h3>
+        <p style="max-width: 800px; margin: 0 auto 30px; color: #ddd;">We proudly serve a wide range of clients across Bilaspur and surrounding regions. Our team is trusted by:</p>
+        
+         
+            <div>
+            <div class="client-logo" width="50" height="50">
+            <font color="purple">
+                <img src="https://via.placeholder.com/150x60?text=shrishti+children+hospital" alt="SHRISHTI CHILDREN HOSPITAL" width="30" height="30" />
+
+    </div>
+            <div class="client-logo">
+                <img src="https://via.placeholder.com/150x60?text=Manya+Imaging" alt="Manya Imaging & Diagnostics">
+            </div>
+            <div class="client-logo">
+                <img src="https://via.placeholder.com/150x60?text=Khanduja+Hospital" alt="Khanduja Hospital">
+            </div>
+            <div class="client-logo">
+                <img src="https://via.placeholder.com/150x60?text=Dubey+Nursing" alt="Dubey Nursing Home">
+</font>            
+</div>
+        </div>
+    </section>
+    
+    <!-- Feedback System -->
+    <section class="feedback-section" id="feedback">
+        <h2 class="section-title">Feedback System</h2>
+        
+        <div class="feedback-tabs">
+            <div class="feedback-tab active" data-tab="client">Client Feedback</div>
+            <div class="feedback-tab" data-tab="employee">Employee Feedback</div>
+        </div>
+        
+        <!-- Client Feedback Content -->
+        <div class="feedback-content active" id="client-feedback">
+            <div class="feedback-form">
+                <h3>Share Your Experience</h3>
+                <p>We value your feedback to help us improve our services</p>
+                
+                <form id="clientFeedbackForm">
+                    <div class="form-group">
+                        <label for="client-name">Your Name</label>
+                        <input type="text" id="client-name" name="client-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="client-email">Email Address</label>
+                        <input type="email" id="client-email" name="client-email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="client-service">Service Received</label>
+                        <select id="client-service" name="client-service">
+                            <option value="housekeeping">Housekeeping</option>
+                            <option value="security">Security Services</option>
+                            <option value="patient-care">Patient Care</option>
+                            <option value="pest-control">Pest Control</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Your Rating</label>
+                        <div class="rating-container">
+                            <div id="client-rating"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="client-message">Your Feedback</label>
+                        <textarea id="client-message" name="client-message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                </form>
+            </div>
+            
+            <div class="feedback-filter">
+                <div class="filter-btn active" data-filter="all">All</div>
+                <div class="filter-btn" data-filter="5">5 Stars</div>
+                <div class="filter-btn" data-filter="4">4 Stars</div>
+                <div class="filter-btn" data-filter="3">3 Stars</div>
+                <div class="filter-btn" data-filter="housekeeping">Housekeeping</div>
+                <div class="filter-btn" data-filter="security">Security</div>
+                <div class="filter-btn" data-filter="patient-care">Patient Care</div>
+            </div>
+            
+            <div class="feedback-grid" id="client-feedback-grid">
+                <div class="feedback-card">
+                    <div class="feedback-meta">
+                        <div class="feedback-avatar">AK</div>
+                        <div>
+                            <div class="feedback-name">Amit Kumar</div>
+                            <div class="feedback-date">15 June 2023</div>
+                        </div>
+                    </div>
+                    <div class="feedback-rating">
+                        <div class="client-rating" data-rating="5"></div>
+                    </div>
+                    <div class="feedback-text">
+                        "Balaji Hospitality's housekeeping staff has been maintaining our hospital for 2 years now. Their attention to detail and professionalism is commendable. Highly recommended!"
+                    </div>
+                    <div class="feedback-service" style="display: none;">housekeeping</div>
+                </div>
+                
+                <div class="feedback-card">
+                    <div class="feedback-meta">
+                        <div class="feedback-avatar">SP</div>
+                        <div>
+                            <div class="feedback-name">Sunita Patel</div>
+                            <div class="feedback-date">2 July 2023</div>
+                        </div>
+                    </div>
+                    <div class="feedback-rating">
+                        <div class="client-rating" data-rating="4"></div>
+                    </div>
+                    <div class="feedback-text">
+                        "The patient care attendants provided by Balaji were compassionate and well-trained. They took excellent care of my mother during her hospital stay."
+                    </div>
+                    <div class="feedback-service" style="display: none;">patient-care</div>
+                </div>
+                
+                <div class="feedback-card">
+                    <div class="feedback-meta">
+                        <div class="feedback-avatar">RS</div>
+                        <div>
+                            <div class="feedback-name">Rajesh Sharma</div>
+                            <div class="feedback-date">25 May 2023</div>
+                        </div>
+                    </div>
+                    <div class="feedback-rating">
+                        <div class="client-rating" data-rating="5"></div>
+                    </div>
+                    <div class="feedback-text">
+                        "We've been using their security services for our corporate office. The guards are punctual, alert and well-mannered. Very satisfied with their service."
+                    </div>
+                    <div class="feedback-service" style="display: none;">security</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Employee Feedback Content -->
+        <div class="feedback-content" id="employee-feedback">
+            <div class="feedback-form">
+                <h3>Employee Feedback Portal</h3>
+                <p>Your feedback helps us create a better work environment</p>
+                
+                <form id="employeeFeedbackForm">
+                    <div class="form-group">
+                        <label for="employee-id">Employee ID</label>
+                        <input type="text" id="employee-id" name="employee-id" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="employee-name">Your Name</label>
+                        <input type="text" id="employee-name" name="employee-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="employee-department">Department</label>
+                        <select id="employee-department" name="employee-department">
+                            <option value="housekeeping">Housekeeping</option>
+                            <option value="security">Security</option>
+                            <option value="patient-care">Patient Care</option>
+                            <option value="pest-control">Pest Control</option>
+                            <option value="management">Management</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Work Satisfaction</label>
+                        <div class="rating-container">
+                            <div id="employee-rating"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="employee-message">Your Feedback</label>
+                        <textarea id="employee-message" name="employee-message" required placeholder="Share your work experience, suggestions, or concerns"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="anonymous" id="anonymous"> Submit anonymously
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                </form>
+            </div>
+            
+            <div class="feedback-grid" id="employee-feedback-grid">
+                <div class="feedback-card employee-feedback">
+                    <div class="feedback-meta">
+                        <div class="feedback-avatar">HK</div>
+                        <div>
+                            <div class="feedback-name">Housekeeping Staff</div>
+                            <div class="feedback-date">10 July 2023</div>
+                        </div>
+                    </div>
+                    <div class="feedback-rating">
+                        <div class="employee-rating" data-rating="4"></div>
+                    </div>
+                    <div class="feedback-text">
+                        "The training provided by the company has helped me improve my skills. Management is supportive and the work environment is good."
+                    </div>
+                </div>
+                
+                <div class="feedback-card employee-feedback">
+                    <div class="feedback-meta">
+                        <div class="feedback-avatar">SG</div>
+                        <div>
+                            <div class="feedback-name">Security Guard</div>
+                            <div class="feedback-date">5 July 2023</div>
+                        </div>
+                    </div>
+                    <div class="feedback-rating">
+                        <div class="employee-rating" data-rating="3"></div>
+                    </div>
+                    <div class="feedback-text">
+                        "Would appreciate more regular breaks during long shifts. Overall the job is good and the company treats us fairly."
+                    </div>
+                </div>
+                
+                <div class="feedback-card employee-feedback">
+                    <div class="feedback-meta">
+                        <div class="feedback-avatar">PC</div>
+                        <div>
+                            <div class="feedback-name">Patient Care Attendant</div>
+                            <div class="feedback-date">1 July 2023</div>
+                        </div>
+                    </div>
+                    <div class="feedback-rating">
+                        <div class="employee-rating" data-rating="5"></div>
+                    </div>
+                    <div class="feedback-text">
+                        "I'm proud to work with Balaji Hospitality. We receive proper training and the management values our feedback. The work is challenging but rewarding."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Our Location</h3>
+                <p>Chandra Sekhar Azad Nagar<br>Deorikhurd, Bilaspur<br>Chhattisgarh 495001</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>Office: +91 62684 81363</p>
+                <p>MR. HANUMANTH KANTA RAO:<p> 
+                 <p>+91 96449 11777</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>info:-<p>
+                <p> balajihospitalityservices53@gmail.com</p>
+        </div>
+        </div>
+        
+        <div class="contact-form">
+            <h3 style="text-align: center; margin-bottom: 30px;">Send Us a Message</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="housekeeping">Housekeeping Services</option>
+                        <option value="security">Security Guards</option>
+                        <option value="patient-care">Patient Care Services</option>
+                        <option value="pest-control">Pest Control Services</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Call to Action Buttons -->
+    <div class="button-group" style="text-align: center; margin: 50px auto; max-width: 800px;">
+        <a href="#contact" class="cta-button">Contact Us Today</a>
+        <a href="https://wa.me/916268481363" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="#job-application" class="cta-button" id="apply-now-btn-2">Apply for Jobs</a>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <img src="https://via.placeholder.com/150x80?text=Balaji+Logo" alt="Balaji Hospitality Services" class="footer-logo">
+                <p>Providing premium hospitality services since 2014 with dedication, professionalism and attention to detail.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#job-application">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#services">Housekeeping</a></li>
+                    <li><a href="#services">Security Services</a></li>
+                    <li><a href="#services">Patient Care</a></li>
+                    <li><a href="#services">Pest Control</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Chandra Sekhar Azad Nagar, Deorikhurd, Bilaspur, Chhattisgarh, 495001</p>
+                <p><i class="fas fa-phone"></i> +91 62684-81363</p>
+                <p><i class="fas fa-phone"></i> +91 96449-11777</p>
+                <p><i class="fas fa-envelope"></i> balajihospitality53@gmail.com</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Balaji Hospitality Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Job Application Modal -->
+    <div class="modal" id="job-application-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="text-align: center; margin-bottom: 30px;">Job Application Form</h2>
+            <form id="jobApplicationForm">
+                <div class="form-group">
+                    <label for="applicant-name">Full Name</label>
+                    <input type="text" id="applicant-name" name="applicant-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicant-email">Email Address</label>
+                    <input type="email" id="applicant-email" name="applicant-email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicant-phone">Phone Number</label>
+                    <input type="tel" id="applicant-phone" name="applicant-phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicant-position">Position Applying For</label>
+                    <select id="applicant-position" name="applicant-position" required>
+                        <option value="">Select Position</option>
+                        <option value="housekeeping">Housekeeping Staff</option>
+                        <option value="security">Security Guard</option>
+                        <option value="patient-care">Patient Care Attendant</option>
+                        <option value="pest-control">Pest Control Technician</option>
+                        <option value="supervisor">Supervisor</option>
+                        <option value="marketing">Marketing & Sales Manager</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicant-experience">Years of Experience</label>
+                    <input type="number" id="applicant-experience" name="applicant-experience" min="0" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicant-resume">Upload Resume (PDF or DOC)</label>
+                    <input type="file" id="applicant-resume" name="applicant-resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicant-message">Cover Letter (Optional)</label>
+                    <textarea id="applicant-message" name="applicant-message"></textarea>
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <button class="chatbot-button" id="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <h3>Balaji Hospitality Assistant</h3>
+                <button id="close-chatbot" style="background: none; border: none; color: white; font-size: 1.2rem;">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">Hello! How can I help you today?</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Type your message...">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Notification Badge -->
+    <div class="notification-badge" id="notification-badge">
+        <i class="fas fa-bell"></i>
+    </div>
+
+    <!-- Notification Panel -->
+    <div class="notification-panel" id="notification-panel">
+        <div class="notification-item">
+            <p>New service package available for hospitals</p>
+            <div class="notification-time">2 hours ago</div>
+        </div>
+        <div class="notification-item">
+            <p>Special discount on pest control services this month</p>
+            <div class="notification-time">1 day ago</div>
+        </div>
+        <div class="notification-item">
+            <p>Our office will be closed on 15th August</p>
+            <div class="notification-time">3 days ago</div>
+        </div>
+    </div>
+
+    <!-- Emergency Contact Banner -->
+    <div class="emergency-banner">
+        <div class="phone">
+            <i class="fas fa-phone-alt"></i> Office: +91 62684 81363
+        </div>
+                </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    
+    <script>
+        // Document Ready Function
+        $(document).ready(function() {
+            // Initialize RateYo plugin for ratings
+            $("#client-rating").rateYo({
+                rating: 5,
+                starWidth: "25px",
+                normalFill: "#ddd",
+                ratedFill: "#d4af37"
+            });
+            
+            $("#employee-rating").rateYo({
+                rating: 5,
+                starWidth: "25px",
+                normalFill: "#ddd",
+                ratedFill: "#d4af37"
+            });
+            
+            // Initialize existing ratings
+            $(".client-rating").each(function() {
+                $(this).rateYo({
+                    rating: $(this).data("rating"),
+                    starWidth: "15px",
+                    readOnly: true,
+                    normalFill: "#ddd",
+                    ratedFill: "#d4af37"
+                });
+            });
+            
+            $(".employee-rating").each(function() {
+                $(this).rateYo({
+                    rating: $(this).data("rating"),
+                    starWidth: "15px",
+                    readOnly: true,
+                    normalFill: "#ddd",
+                    ratedFill: "#d4af37"
+                });
+            });
+            
+            // FAQ Toggle Functionality
+            $(".faq-question").click(function() {
+                $(this).parent().toggleClass("active");
+                $(this).parent().siblings().removeClass("active");
+            });
+            
+            // Feedback Tab Switching
+            $(".feedback-tab").click(function() {
+                $(".feedback-tab").removeClass("active");
+                $(this).addClass("active");
+                
+                var tabId = $(this).data("tab");
+                $(".feedback-content").removeClass("active");
+                $("#" + tabId + "-feedback").addClass("active");
+            });
+            
+            // Feedback Filtering
+            $(".filter-btn").click(function() {
+                $(".filter-btn").removeClass("active");
+                $(this).addClass("active");
+                
+                var filter = $(this).data("filter");
+                if (filter === "all") {
+                    $(".feedback-card").show();
+                } else if (["5", "4", "3"].includes(filter)) {
+                    $(".feedback-card").hide();
+                    $(".feedback-card").each(function() {
+                        var rating = $(this).find(".client-rating").data("rating");
+                        if (rating == filter) {
+                            $(this).show();
+                        }
+                    });
+                } else {
+                    $(".feedback-card").hide();
+                    $(".feedback-card").each(function() {
+                        var service = $(this).find(".feedback-service").text();
+                        if (service === filter) {
+                            $(this).show();
+                        }
+                    });
+                }
+            });
+            
+            // Job Application Modal
+            $("#apply-now-btn, #apply-now-btn-2").click(function(e) {
+                e.preventDefault();
+                $("#job-application-modal").css("display", "flex");
+            });
+            
+            $(".close-modal").click(function() {
+                $("#job-application-modal").hide();
+            });
+            
+            $(window).click(function(e) {
+                if (e.target == $("#job-application-modal")[0]) {
+                    $("#job-application-modal").hide();
+                }
+            });
+            
+            // Chatbot Toggle
+            $("#chatbot-toggle").click(function() {
+                $("#chatbot-window").toggle();
+            });
+            
+            $("#close-chatbot").click(function() {
+                $("#chatbot-window").hide();
+            });
+            
+            // Send Message in Chatbot
+            $("#send-message").click(function() {
+                var message = $("#chatbot-input").val();
+                if (message.trim() !== "") {
+                    $("#chatbot-messages").append('<div class="chatbot-message user-message">' + message + '</div>');
+                    $("#chatbot-input").val("");
+                    
+                    // Simple bot response (in a real implementation, this would be more sophisticated)
+                    var botResponses = [
+                        "Thank you for your message. Our team will get back to you shortly.",
+                        "For immediate assistance, please call our office : +91 62684 81363",
+                        "Would you like information about our housekeeping, security, patient care, or pest control services?",
+                        "We're here to help. Could you please provide more details about your inquiry?"
+                    ];
+                    
+                    var randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)];
+                    
+                    setTimeout(function() {
+                        $("#chatbot-messages").append('<div class="chatbot-message">' + randomResponse + '</div>');
+                        $("#chatbot-messages").scrollTop($("#chatbot-messages")[0].scrollHeight);
+                    }, 1000);
+                    
+                    $("#chatbot-messages").scrollTop($("#chatbot-messages")[0].scrollHeight);
+                }
+            });
+            
+            // Notification Toggle
+            $("#notification-badge").click(function() {
+                $("#notification-panel").toggle();
+            });
+            
+            // Back to Top Button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 300) {
+                    $("#back-to-top").addClass("visible");
+                } else {
+                    $("#back-to-top").removeClass("visible");
+                }
+            });
+            
+            $("#back-to-top").click(function() {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+            
+            // Form Submissions (simplified for demo)
+            $("#contactForm").submit(function(e) {
+                e.preventDefault();
+                alert("Thank you for your message! We'll contact you soon.");
+                $(this).trigger("reset");
+            });
+            
+            $("#clientFeedbackForm").submit(function(e) {
+                e.preventDefault();
+                alert("Thank you for your feedback! We appreciate your time.");
+                $(this).trigger("reset");
+            });
+            
+            $("#employeeFeedbackForm").submit(function(e) {
+                e.preventDefault();
+                alert("Thank you for your feedback! Your input is valuable to us.");
+                $(this).trigger("reset");
+            });
+            
+            $("#jobApplicationForm").submit(function(e) {
+                e.preventDefault();
+                alert("Thank you for your application! We'll review your details and get back to you.");
+                $(this).trigger("reset");
+                $("#job-application-modal").hide();
+            });
+            
+            // Smooth Scrolling for Anchor Links
+            $('a[href*="#"]').on('click', function(e) {
+                e.preventDefault();
+                
+                $('html, body').animate(
+                    {
+                        scrollTop: $($(this).attr('href')).offset().top,
+                    },
+                    500,
+                    'linear'
+                );
+            });
+            
+            // Initialize Owl Carousel for Testimonials (if needed)
+            // $('.testimonials-carousel').owlCarousel({
+            //     loop: true,
+            //     margin: 30,
+            //     nav: true,
+            //     responsive: {
+            //         0: {
+            //             items: 1
+            //         },
+            //         768: {
+            //             items: 2
+            //         },
+            //         992: {
+            //             items: 3
+            //         }
+            //     }
+            // });
+        });
+    </script>
+</body>
+</html>
+                 
